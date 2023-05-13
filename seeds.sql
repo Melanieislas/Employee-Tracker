@@ -5,10 +5,10 @@ VALUES (001, 'Engineering'),
         (004, 'Sales');
 
 INSERT INTO roles (id, title, salary, department_id)
-VALUES (001, 'Salesperson', 800.00, 001),
-        (002, 'Salespersonf', 800.00, 002),
-        (003, 'Salespersong', 800.00, 003),
-        (004, 'Salespersonh', 800.00, 004);
+VALUES (001, 'Supervisor', 800.00, 001),
+        (002, 'Engineer', 850.00, 002),
+        (003, 'Salesperson', 700.00, 003),
+        (004, 'Manager', 1200.00, 004);
 
 INSERT INTO employee (id, first_name, last_name, role_id, manager_id)
 VALUES (001, 'Melanie', 'Doe', 001, 001),
