@@ -12,11 +12,6 @@ db.connect (function(err,results) {
 });
 
 var employee_data = function() {
-    /*db.query('SOURCE seeds.sql;', function(err,results) {
-        if(err){
-            console.log(err);
-        }
-    });*/
 inquirer
     .prompt([
         {
