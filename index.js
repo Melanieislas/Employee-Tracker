@@ -71,7 +71,35 @@ inquirer
                         message: 'Add the department for this role: ',
                     }
                 ]).then((data) => {
-                    db.query('INSERT INTO roles (id, title, salary, department_id) VALUES ()',  [data.Department],  function(err,results){
+                    db.query('INSERT INTO roles (id, title, salary, department_id) VALUES ()', [data.Role_Name, data.Salary, data.Role_Department ],  function(err,results){
+                        employee_data();
+                    });
+                })
+        } else if (data.Home === 'Add an employee') {
+            inquirer
+                .prompt([
+                    {
+                        type: 'input',
+                        name: 'First',
+                        message: 'Add the employees first name: ',
+                    },
+                    {
+                        type: 'input',
+                        name: 'Last',
+                        message: 'Add the employees last name: ',
+                    },
+                    {
+                        type: 'input',
+                        name: 'Role',
+                        message: 'Add the employee role: ',
+                    },
+                    {
+                        type: 'input',
+                        name: 'Manager',
+                        message: 'Add the employees manager: ',
+                    }
+                ]).then((data) => {
+                    db.query('INSERT INTO employee (id, first_name, last_name, role_id, manager_id) VALUES ()', [data.First, data.Last, data.Role, data.Manager ],  function(err,results){
                         employee_data();
                     });
                 })
