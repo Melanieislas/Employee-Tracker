@@ -1,4 +1,4 @@
-# Employee-Tracker
+# Employee Tracker
 
 ## Description
 
@@ -14,7 +14,7 @@ To install and run this application, you have to first install the inquirer pack
 
 This is the link to the walkthrough video.
 
-()
+(https://drive.google.com/file/d/1wlAbn4ZXaZ6_YoY4jYyKOroVXdIHqj01/view)
 
 ## License
 
